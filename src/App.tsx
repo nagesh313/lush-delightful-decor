@@ -1,12 +1,10 @@
 import "materialize-css/dist/css/materialize.min.css";
 import React from "react";
 import "./App.css";
-import { CollapsibleComponent } from "./components/html/Collapsible";
 import { Fabcomponent } from "./components/html/FabComponent";
 import { FooterComponent } from "./components/html/Footer";
 import { NavComponent } from "./components/html/Nav";
 import { ParralaxComponent } from "./components/html/ParralaxComponent";
-import { SliderComponent } from "./components/html/Slider";
 
 declare const Materialize: any;
 class App extends React.Component {

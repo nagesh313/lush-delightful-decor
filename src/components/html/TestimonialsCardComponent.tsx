@@ -13,14 +13,14 @@ export class TestimonialsCardComponent extends React.Component {
                 <div className="col m3 s12">
                   <div className="card hoverable">
                     <div className="card-content center">
-                      <a
+                      <button
                         className="btn-floating btn-large waves-effect waves-light pulse activator"
                         onClick={(el) => {
                           this.removePulse(el);
                         }}
                       >
                         <i className="material-icons">format_quote</i>
-                      </a>
+                      </button>
                     </div>
                     <div className="card-content">
                       <p>
@@ -45,14 +45,14 @@ export class TestimonialsCardComponent extends React.Component {
                 <div className="col m3 s12">
                   <div className="card hoverable">
                     <div className="card-content center">
-                      <a
+                      <button
                         className="btn-floating btn-large waves-effect waves-light pulse activator"
                         onClick={(el) => {
                           this.removePulse(el);
                         }}
                       >
                         <i className="material-icons">thumb_up</i>
-                      </a>
+                      </button>
                     </div>
                     <div className="card-content">
                       <p>
@@ -77,14 +77,14 @@ export class TestimonialsCardComponent extends React.Component {
                 <div className="col m3 s12">
                   <div className="card hoverable">
                     <div className="card-content center">
-                      <a
+                      <button
                         className="btn-floating btn-large waves-effect waves-light pulse activator"
                         onClick={(el) => {
                           this.removePulse(el);
                         }}
                       >
                         <i className="material-icons">rate_review</i>
-                      </a>
+                      </button>
                     </div>
                     <div className="card-content">
                       <p>
@@ -109,14 +109,14 @@ export class TestimonialsCardComponent extends React.Component {
                 <div className="col m3 s12">
                   <div className="card hoverable">
                     <div className="card-content center">
-                      <a
+                      <button
                         className="btn-floating btn-large waves-effect waves-light pulse activator"
                         onClick={(el) => {
                           this.removePulse(el);
                         }}
                       >
                         <i className="material-icons">whatshot</i>
-                      </a>
+                      </button>
                     </div>
                     <div className="card-content">
                       <p>

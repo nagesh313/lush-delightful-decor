@@ -11,10 +11,10 @@ export class SideNavComponent extends React.Component {
           <li>
             <div className="user-view">
               <div className="background">
-                <img src="logo.png" />
+                <img alt="" src="logo.png" />
               </div>
               <a href="#!user">
-                <img className="circle" src="logo.png" />
+                <img alt="" className="circle" src="logo.png" />
               </a>
               <a href="#!name">
                 <span className="white-text name">John Doe</span>
@@ -36,7 +36,9 @@ export class SideNavComponent extends React.Component {
             <div className="divider"></div>
           </li>
           <li>
-            <a className="subheader">Subheader</a>
+            <a href="/#" className="subheader">
+              Subheader
+            </a>
           </li>
           <li>
             <a className="waves-effect" href="#!">
@@ -52,7 +54,7 @@ export class SideNavComponent extends React.Component {
           <li className="no-padding">
             <ul className="collapsible collapsible-accordion">
               <li>
-                <a className="collapsible-header">
+                <a href="/#" className="collapsible-header">
                   Dropdown<i className="material-icons">arrow_drop_down</i>
                 </a>
                 <div className="collapsible-body">

@@ -10,7 +10,7 @@ export class CardsComponent extends React.Component {
                 <div className="col m4 s12">
                   <div className="card hoverable" id="card1">
                     <div className="card-image">
-                      <img src="images/13.jpg" />
+                      <img alt="" src="images/13.jpg" />
                       <span className="card-title">Card Title</span>
                     </div>
                     <div className="card-content">
@@ -27,7 +27,7 @@ export class CardsComponent extends React.Component {
                 <div className="col m4 s12">
                   <div className="card hoverable">
                     <div className="card-image">
-                      <img src="images/14.jpeg" />
+                      <img alt="" src="images/14.jpeg" />
                       <span className="card-title">Card Title</span>
                     </div>
                     <div className="card-content">
@@ -44,7 +44,7 @@ export class CardsComponent extends React.Component {
                 <div className="col m4 s12">
                   <div className="card hoverable">
                     <div className="card-image">
-                      <img src="images/15.jpg" />
+                      <img alt="" src="images/15.jpg" />
                       <span className="card-title">Card Title</span>
                     </div>
                     <div className="card-content">
