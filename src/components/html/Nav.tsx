@@ -1,16 +1,35 @@
 import React from "react";
 import "materialize-css";
 import { SideNavComponent } from "./SideNav";
- 
-export class NavComponent extends React.Component {
+interface IState {
+  imageName: any;
+}
+export class NavComponent extends React.Component<{}, IState> {
+  state = { imageName: "logo text/0.png" };
+  count = 0;
+  componentDidMount() {
+    // this.getImage();
+  }
+  getImage() {
+    // setInterval(() => {
+    //   let imageName = (this.count++ % 8) + ".png";
+    //   console.log(imageName);
+    //   this.setState({ imageName: "logo text/" + imageName });
+    // }, 2000);
+  }
   render() {
     return (
       <React.Fragment>
         <SideNavComponent></SideNavComponent>
-        <nav>
+        <nav style={{ backgroundColor: "#7e8000" }}>
           <div className="nav-wrapper">
-            <a  href="/#" className="brand-logo center">
-              Logo
+            <a href="/#" className="brand-logo center">
+              <img
+                alt=""
+                className="responsive-img"
+                style={{ verticalAlign: "middle" }}
+                src={this.state.imageName}
+              />
             </a>
             <ul id="nav-mobile" className="left">
               <li>

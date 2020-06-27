@@ -9,67 +9,41 @@ export class SideNavComponent extends React.Component {
       <React.Fragment>
         <ul id="slide-out" className="side-nav">
           <li>
-            <div className="user-view">
-              <div className="background">
-                <img alt="" src="logo.png" />
-              </div>
-              <a href="#!user">
-                <img alt="" className="circle" src="logo.png" />
-              </a>
-              <a href="#!name">
-                <span className="white-text name">John Doe</span>
-              </a>
-              <a href="#!email">
-                <span className="white-text email">jdandturk@gmail.com</span>
-              </a>
-            </div>
-          </li>
-          <li>
-            <a href="#!">
-              <i className="material-icons">cloud</i>First Link With Icon
-            </a>
-          </li>
-          <li>
-            <a href="#!">Second Link</a>
+            <img alt="" className="circle responsive-img" src="logo.png" />
           </li>
           <li>
             <div className="divider"></div>
           </li>
           <li>
-            <a href="/#" className="subheader">
-              Subheader
+            <a href="#!" className="waves-effect">
+              <i className="material-icons">cloud</i>Home
             </a>
           </li>
+
           <li>
-            <a className="waves-effect" href="#!">
-              Third Link With Waves
+            <a href="#!" className="waves-effect">
+              <i className="material-icons">cloud</i>About us
             </a>
           </li>
+
           <li>
-            <a href="#!">First Sidebar Link</a>
-          </li>
-          <li>
-            <a href="#!">Second Sidebar Link</a>
+            <a href="/#" className="waves-effect">
+              <i className="material-icons">cloud</i> Testimonials
+            </a>
           </li>
           <li className="no-padding">
             <ul className="collapsible collapsible-accordion">
               <li>
                 <a href="/#" className="collapsible-header">
-                  Dropdown<i className="material-icons">arrow_drop_down</i>
+                  Our Offerings<i className="material-icons">arrow_drop_down</i>
                 </a>
                 <div className="collapsible-body">
                   <ul>
                     <li>
-                      <a href="#!">First</a>
+                      <a href="#!">Kitchen</a>
                     </li>
                     <li>
-                      <a href="#!">Second</a>
-                    </li>
-                    <li>
-                      <a href="#!">Third</a>
-                    </li>
-                    <li>
-                      <a href="#!">Fourth</a>
+                      <a href="#!">TV Unit</a>
                     </li>
                   </ul>
                 </div>
