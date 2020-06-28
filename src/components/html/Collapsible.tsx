@@ -11,7 +11,7 @@ export class CollapsibleComponent extends React.Component {
     return (
       <React.Fragment>
         <br />
-        <div className="row">
+        <div className=" container row">
           <div className="col s12" style={{ paddingBottom: "5px" }}>
             <ul className="tabs">
               <li className="tab col s2">
@@ -45,9 +45,9 @@ export class CollapsibleComponent extends React.Component {
           <div
             id="test1"
             style={{ height: "500px", paddingTop: "5px" }}
-            className="row"
+            className="container row"
           >
-            <div className=" col m3 s2">
+            <div className=" m3 s2">
               <img
                 alt=""
                 className="materialboxed"
@@ -56,7 +56,7 @@ export class CollapsibleComponent extends React.Component {
                 src="https://lorempixel.com/800/400/nature/1"
               />
             </div>
-            <div className="col m3 s2">
+            <div className="m3 s2">
               <img
                 alt=""
                 className="materialboxed"
@@ -67,7 +67,7 @@ export class CollapsibleComponent extends React.Component {
             </div>
           </div>
           <div id="test2" style={{ height: "500px" }} className="col s12">
-            <div className=" col m3 s2">
+            <div className=" m3 s2">
               <img
                 alt=""
                 className="materialboxed"
@@ -76,7 +76,7 @@ export class CollapsibleComponent extends React.Component {
                 src="https://lorempixel.com/800/400/nature/3"
               />
             </div>
-            <div className="col m3 s2">
+            <div className="m3 s2">
               <img
                 alt=""
                 className="materialboxed"
@@ -85,7 +85,7 @@ export class CollapsibleComponent extends React.Component {
                 src="https://lorempixel.com/800/400/nature/4"
               />
             </div>
-            <div className=" col m3 s2">
+            <div className=" m3 s2">
               <img
                 alt=""
                 className="materialboxed"
@@ -94,7 +94,7 @@ export class CollapsibleComponent extends React.Component {
                 src="https://lorempixel.com/800/400/nature/5"
               />
             </div>
-            <div className="col m3 s2">
+            <div className="m3 s2">
               <img
                 alt=""
                 className="materialboxed"
@@ -105,7 +105,7 @@ export class CollapsibleComponent extends React.Component {
             </div>
           </div>
           <div id="test3" style={{ height: "500px" }} className="col s12">
-            <div className=" col m3 s2">
+            <div className=" m3 s2">
               <img
                 alt=""
                 className="materialboxed"
@@ -114,7 +114,7 @@ export class CollapsibleComponent extends React.Component {
                 src="https://lorempixel.com/800/400/nature/7"
               />
             </div>
-            <div className="col m3 s2">
+            <div className="m3 s2">
               <img
                 alt=""
                 className="materialboxed"
@@ -125,7 +125,7 @@ export class CollapsibleComponent extends React.Component {
             </div>
           </div>
           <div id="test4" style={{ height: "500px" }} className="col s12">
-            <div className=" col m3 s2">
+            <div className=" m3 s2">
               <img
                 alt=""
                 className="materialboxed"
@@ -134,7 +134,7 @@ export class CollapsibleComponent extends React.Component {
                 src="https://lorempixel.com/800/400/nature/9"
               />
             </div>
-            <div className="col m3 s2">
+            <div className="m3 s2">
               <img
                 alt=""
                 className="materialboxed"
@@ -145,7 +145,7 @@ export class CollapsibleComponent extends React.Component {
             </div>
           </div>
           <div id="test5" style={{ height: "500px" }} className="col s12">
-            <div className=" col m3 s2">
+            <div className=" m3 s2">
               <img
                 alt=""
                 className="materialboxed"
@@ -154,7 +154,7 @@ export class CollapsibleComponent extends React.Component {
                 src="https://lorempixel.com/800/400/nature/11"
               />
             </div>
-            <div className="col m3 s2">
+            <div className="m3 s2">
               <img
                 alt=""
                 className="materialboxed"
@@ -175,7 +175,7 @@ export class CollapsibleComponent extends React.Component {
           </div>
         </div>
         {/* <div className="container" style={{ width: "80%" }}>
-          <div className="row">
+          <div className="container row">
             <ul className="collapsible popout" data-collapsible="accordion">
               <li>
                 <div className="collapsible-header">
