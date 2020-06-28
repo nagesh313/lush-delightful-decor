@@ -18,9 +18,19 @@ export class FooterComponent extends React.Component {
                 <ul>
                   <li>
                     <a
+                      href="tel:555-555-5555"
                       className="grey-text text-lighten-3 valign-wrapper"
-                      href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=nagesh3.13@gmail.com"
-                      target="_blank" rel="noopener noreferrer"
+                    >
+                      <i className="material-icons">local_phone</i>
+                      555-555-5555
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="grey-text text-lighten-3 valign-wrapper"
+                      href="mailto:webmaster@example.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
                         style={{ height: "30px", width: "30px" }}
@@ -35,7 +45,8 @@ export class FooterComponent extends React.Component {
                     <a
                       className="grey-text text-lighten-3 valign-wrapper"
                       href="http://www.facebook.com"
-                      target="_blank" rel="noopener noreferrer"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
                         style={{ height: "30px", width: "30px" }}
@@ -50,7 +61,8 @@ export class FooterComponent extends React.Component {
                     <a
                       className="grey-text text-lighten-3 valign-wrapper"
                       href="http://www.instagram.com"
-                      target="_blank" rel="noopener noreferrer"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
                         style={{ height: "30px", width: "30px" }}
@@ -65,7 +77,8 @@ export class FooterComponent extends React.Component {
                     <a
                       className="grey-text text-lighten-3 valign-wrapper"
                       href="http://www.youtube.com"
-                      target="_blank" rel="noopener noreferrer"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
                         style={{ height: "30px", width: "30px" }}
@@ -80,7 +93,8 @@ export class FooterComponent extends React.Component {
                     <a
                       className="grey-text text-lighten-3 valign-wrapper"
                       href="http://www.twitter.com"
-                      target="_blank" rel="noopener noreferrer"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
                         style={{ height: "30px", width: "30px" }}
