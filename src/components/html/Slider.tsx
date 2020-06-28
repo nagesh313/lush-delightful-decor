@@ -10,38 +10,40 @@ export class SliderComponent extends React.Component {
         <div className="slider">
           <ul className="slides">
             <li>
-              <img alt="" src="https://lorempixel.com/580/250/nature/1" />
+              <img className="responsive-img" alt="" src="preeti/4.jpeg" />
               <div className="caption center-align">
-                <h3>This is our big Tagline!</h3>
+                <h3>Why Choose us?</h3>
                 <h5 className="light grey-text text-lighten-3">
-                  Here's our small slogan.
+                  Our brand's main motto is our client’s full satisfaction.
                 </h5>
               </div>
             </li>
             <li>
-              <img alt="" src="https://lorempixel.com/580/250/nature/2" />
+              <img alt="" className="responsive-img" src="preeti/1.jpeg" />
               <div className="caption left-align">
-                <h3>Left Aligned Caption</h3>
+                <h3>Guaranteed Client’s Satisfaction!</h3>
                 <h5 className="light grey-text text-lighten-3">
-                  Here's our small slogan.
+                  Not only will your materials look great – they will get
+                  results
                 </h5>
               </div>
             </li>
             <li>
-              <img alt="" src="https://lorempixel.com/580/250/nature/3" />
+              <img alt="" className="responsive-img" src="preeti/2.jpeg" />
               <div className="caption right-align">
-                <h3>Right Aligned Caption</h3>
+                <h3>We are Creative!</h3>
                 <h5 className="light grey-text text-lighten-3">
-                  Here's our small slogan.
+                  While keeping a close eye on the calendar and your budget.
                 </h5>
               </div>
             </li>
             <li>
-              <img alt="" src="https://lorempixel.com/580/250/nature/4" />
+              <img alt="" className="responsive-img" src="preeti/3.jpeg" />
               <div className="caption center-align">
-                <h3>This is our big Tagline!</h3>
+                <h3>We bring our diverse background to the table!</h3>
                 <h5 className="light grey-text text-lighten-3">
-                  Here's our small slogan.
+                  Advertising, design, branding, public relations, research and
+                  strategic planning to work for your company.
                 </h5>
               </div>
             </li>

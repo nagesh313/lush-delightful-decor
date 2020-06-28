@@ -16,34 +16,45 @@ export class SideNavComponent extends React.Component {
           </li>
           <li>
             <a href="#!" className="waves-effect">
-              <i className="material-icons">cloud</i>Home
+              <i className="material-icons">home</i>Home
             </a>
           </li>
 
           <li>
             <a href="#!" className="waves-effect">
-              <i className="material-icons">cloud</i>About us
+              <i className="material-icons">loyalty</i>About us
             </a>
           </li>
 
           <li>
             <a href="/#" className="waves-effect">
-              <i className="material-icons">cloud</i> Testimonials
+              <i className="material-icons">insert_comment</i> Testimonials
             </a>
           </li>
+          {/* <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+      <ul id='dropdown1' class='dropdown-content'>
+        <li><a href="#!">First</a></li>
+        <li><a href="#!">Second</a></li>
+        <li><a href="#!">Third</a></li>
+        <li><a href="#!">Fourth</a></li>
+      </ul> */}
           <li className="no-padding">
             <ul className="collapsible collapsible-accordion">
-              <li>
+              <li className="no-padding">
                 <a href="/#" className="collapsible-header">
                   Our Offerings<i className="material-icons">arrow_drop_down</i>
                 </a>
                 <div className="collapsible-body">
                   <ul>
                     <li>
-                      <a href="#!">Kitchen</a>
+                      <a href="#!">
+                        <i className="material-icons">kitchen</i>Kitchen
+                      </a>
                     </li>
                     <li>
-                      <a href="#!">TV Unit</a>
+                      <a href="#!">
+                        <i className="material-icons">tv</i>TV Unit
+                      </a>
                     </li>
                   </ul>
                 </div>

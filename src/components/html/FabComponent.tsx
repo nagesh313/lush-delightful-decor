@@ -6,7 +6,7 @@ export class Fabcomponent extends React.Component {
     return (
       <div>
         <div className="fixed-action-btn">
-          <button className="btn-floating btn-large red">
+          <button className="btn-floating btn-large teal">
             <i className="large material-icons">mode_edit</i>
           </button>
           <ul>

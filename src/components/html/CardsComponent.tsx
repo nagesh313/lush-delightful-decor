@@ -10,8 +10,8 @@ export class CardsComponent extends React.Component {
                 <div className="col m4 s12">
                   <div className="card hoverable" id="card1">
                     <div className="card-image">
-                      <img alt="" src="images/13.jpg" />
-                      <span className="card-title">Card Title</span>
+                      <img alt="" src="card/tele.jpg" />
+                      <span className="teal-text card-title">TV Units</span>
                     </div>
                     <div className="card-content">
                       <p>
@@ -27,8 +27,8 @@ export class CardsComponent extends React.Component {
                 <div className="col m4 s12">
                   <div className="card hoverable">
                     <div className="card-image">
-                      <img alt="" src="images/14.jpeg" />
-                      <span className="card-title">Card Title</span>
+                      <img alt="" src="card/14.jpeg" />
+                      <span className="teal-text card-title">Hall Decor</span>
                     </div>
                     <div className="card-content">
                       <p>
@@ -44,8 +44,10 @@ export class CardsComponent extends React.Component {
                 <div className="col m4 s12">
                   <div className="card hoverable">
                     <div className="card-image">
-                      <img alt="" src="images/15.jpg" />
-                      <span className="card-title">Card Title</span>
+                      <img alt="" src="card/15.jpg" />
+                      <span className="teal-text card-title">
+                        Kitchen Interiors
+                      </span>
                     </div>
                     <div className="card-content">
                       <p>
