@@ -5,7 +5,7 @@ interface IState {
   imageName: any;
 }
 export class NavComponent extends React.Component<{}, IState> {
-  state = { imageName: "logo text/0.png" };
+  state = { imageName: "logo text/Final logo.png" };
   count = 0;
   componentDidMount() {
     // this.getImage();
@@ -22,7 +22,7 @@ export class NavComponent extends React.Component<{}, IState> {
       <React.Fragment>
         <SideNavComponent></SideNavComponent>
         <div className="navbar-fixed">
-          <nav style={{ backgroundColor: "#7e8000" }}>
+          <nav style={{ backgroundColor: "rgb(0, 150, 136)" }}>
             <div className="nav-wrapper">
               <a href="/#" className="brand-logo center">
                 <img
