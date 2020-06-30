@@ -3,6 +3,10 @@ export class CardsComponent extends React.Component {
   render() {
     return (
       <div>
+        <br></br>
+        <h3 className="center" style={{ fontFamily: "cursive" }}>
+          Celebrate the love of decor and design with our offereings
+        </h3>
         <div className="container">
           <div className="row" id="cards-row">
             <ul className="card-list">
@@ -11,13 +15,11 @@ export class CardsComponent extends React.Component {
                   <div className="card hoverable" id="card1">
                     <div className="card-image">
                       <img alt="" src="card/tele.jpg" />
-                      <span className="teal-text card-title">TV Units</span>
+                      {/* <span className="yellow-text card-title">TV Units</span> */}
                     </div>
                     <div className="card-content">
-                      <p>
-                        I am a very simple card. I am good at containing small
-                        bits of information. I am convenient because I require
-                        little markup to use effectively.
+                      <p style={{ textAlign: "center" }}>
+                        Dazzling TV units for a vibrant looking living room
                       </p>
                     </div>
                   </div>
@@ -28,13 +30,12 @@ export class CardsComponent extends React.Component {
                   <div className="card hoverable">
                     <div className="card-image">
                       <img alt="" src="card/14.jpeg" />
-                      <span className="teal-text card-title">Hall Decor</span>
+                      {/* <span className="yellow-text card-title">Hall Decor</span> */}
                     </div>
                     <div className="card-content">
-                      <p>
-                        I am a very simple card. I am good at containing small
-                        bits of information. I am convenient because I require
-                        little markup to use effectively.
+                      <p style={{ textAlign: "center" }}>
+                        Explore our different designs for Gorgeous Ways to Dress
+                        Up Your Hall
                       </p>
                     </div>
                   </div>
@@ -45,15 +46,13 @@ export class CardsComponent extends React.Component {
                   <div className="card hoverable">
                     <div className="card-image">
                       <img alt="" src="card/15.jpg" />
-                      <span className="teal-text card-title">
+                      {/* <span className="yellow-text card-title">
                         Kitchen Interiors
-                      </span>
+                      </span> */}
                     </div>
                     <div className="card-content">
-                      <p>
-                        I am a very simple card. I am good at containing small
-                        bits of information. I am convenient because I require
-                        little markup to use effectively.
+                      <p style={{ textAlign: "center" }}>
+                        One stop solution for all your Kitchen needs
                       </p>
                     </div>
                   </div>

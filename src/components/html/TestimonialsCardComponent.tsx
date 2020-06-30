@@ -8,6 +8,10 @@ export class TestimonialsCardComponent extends React.Component {
       <div>
         <div className="container">
           <div className="row" id="cards-row">
+            <br></br>
+            <h3 className="center" style={{ fontFamily: "cursive" }}>
+              Our Customer's Testimonials
+            </h3>
             <ul className="testimonial-card-list">
               <li style={{ opacity: 0 }}>
                 <div className="col m3 s12">
