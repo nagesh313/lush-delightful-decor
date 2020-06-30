@@ -22,7 +22,7 @@ export class NavComponent extends React.Component<{}, IState> {
       <React.Fragment>
         <SideNavComponent></SideNavComponent>
         <div className="navbar-fixed">
-          <nav style={{ backgroundColor: "#c6ff00" }}>
+          <nav className="teal">
             <div className="nav-wrapper">
               <a href="/#" className="brand-logo center">
                 <img

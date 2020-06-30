@@ -3,23 +3,23 @@ export class FooterComponent extends React.Component {
   render() {
     return (
       <div>
-        <footer className="page-footer" style={{ backgroundColor: "#c6ff00" }}>
+        <footer className="page-footer teal">
           <div className="container">
             <div className="row">
               <div className="col l6 s12">
-                <h5 className="black-text">About us</h5>
-                <p className="black-text text-lighten-4">
+                <h5 className="white-text">About us</h5>
+                <p className="grey-text text-lighten-4">
                   You can use rows and columns here to organize your footer
                   content.
                 </p>
               </div>
               <div className="col l4 offset-l2 s12">
-                <h5 className="black-text">Follow us on</h5>
+                <h5 className="white-text">Follow us on</h5>
                 <ul>
                   <li>
                     <a
                       href="tel:555-555-5555"
-                      className="black-text text-lighten-3 valign-wrapper"
+                      className="grey-text text-lighten-3 valign-wrapper"
                     >
                       <i className="material-icons">local_phone</i>
                       555-555-5555
@@ -27,7 +27,7 @@ export class FooterComponent extends React.Component {
                   </li>
                   <li>
                     <a
-                      className="black-text text-lighten-3 valign-wrapper"
+                      className="grey-text text-lighten-3 valign-wrapper"
                       href="mailto:webmaster@example.com"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -43,7 +43,7 @@ export class FooterComponent extends React.Component {
                   </li>
                   <li>
                     <a
-                      className="black-text text-lighten-3 valign-wrapper"
+                      className="grey-text text-lighten-3 valign-wrapper"
                       href="http://www.facebook.com"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -59,7 +59,7 @@ export class FooterComponent extends React.Component {
                   </li>
                   <li>
                     <a
-                      className="black-text text-lighten-3 valign-wrapper"
+                      className="grey-text text-lighten-3 valign-wrapper"
                       href="http://www.instagram.com"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -75,7 +75,7 @@ export class FooterComponent extends React.Component {
                   </li>
                   <li>
                     <a
-                      className="black-text text-lighten-3 valign-wrapper"
+                      className="grey-text text-lighten-3 valign-wrapper"
                       href="http://www.youtube.com"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -91,7 +91,7 @@ export class FooterComponent extends React.Component {
                   </li>
                   <li>
                     <a
-                      className="black-text text-lighten-3 valign-wrapper"
+                      className="grey-text text-lighten-3 valign-wrapper"
                       href="http://www.twitter.com"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -109,7 +109,7 @@ export class FooterComponent extends React.Component {
               </div>
             </div>
           </div>
-          <div className="footer-copyright black-text">
+          <div className="footer-copyright">
             <div className="container">
               © 2020 LUSH INTERIOR DECOR- PROVIDING HOME AND INTERIOR DESIGN
               IDEAS. ALL RIGHTS RESERVED.
