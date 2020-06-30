@@ -5,6 +5,7 @@ import { TestimonialsCardComponent } from "./TestimonialsCardComponent";
 import { CollapsibleComponent } from "./Collapsible";
 import { SliderComponent } from "./Slider";
 import { CarouselComponent } from "./CarouselComponent";
+import { TabsComponent } from "./Tabs";
 declare const $: any;
 export class ParralaxComponent extends React.Component {
   componentDidMount() {
@@ -17,22 +18,22 @@ export class ParralaxComponent extends React.Component {
         <CardsComponent></CardsComponent>
         <div className="parallax-container">
           <div className="parallax">
-            <img alt="" src="images/parallax1.jpg" />
+            <img alt="" src="actual/7.jpeg" />
           </div>
         </div>
         <div className="section white">
           <CollapsibleComponent></CollapsibleComponent>
+          <TabsComponent></TabsComponent>
         </div>
         <div className="parallax-container">
           <div className="parallax">
-            <img alt="" src="images/parallax1.jpg" />
+            <img alt="" src="actual/8.jpeg" />
           </div>
         </div>
-
         <CarouselComponent></CarouselComponent>
         <div className="parallax-container">
           <div className="parallax">
-            <img alt="" src="images/parallax2.jpg" />
+            <img alt="" src="actual/9.jpeg" />
           </div>
         </div>
         <div className="section white">
@@ -40,7 +41,7 @@ export class ParralaxComponent extends React.Component {
         </div>
         <div className="parallax-container">
           <div className="parallax">
-            <img alt="" src="images/parallax2.jpg" />
+            <img alt="" src="actual/10.jpeg" />
           </div>
         </div>
       </React.Fragment>

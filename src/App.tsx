@@ -28,7 +28,9 @@ class App extends React.Component {
     return (
       <div className="App">
         <NavComponent></NavComponent>
+        {/*  */}
         <ParralaxComponent></ParralaxComponent>
+
         <FooterComponent></FooterComponent>
         <Fabcomponent></Fabcomponent>
         {/* <ToastComponent></ToastComponent> */}

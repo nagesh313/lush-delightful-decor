@@ -12,7 +12,7 @@ export class CollapsibleComponent extends React.Component {
       <React.Fragment>
         <br />
         <div className=" container row">
-          <div className="col s12" style={{ paddingBottom: "5px" }}>
+          {/* <div className="col s12" style={{ paddingBottom: "5px" }}>
             <ul className="tabs">
               <li className="tab col s2">
                 <a href="#test1">Living Room Designs</a>
@@ -173,7 +173,7 @@ export class CollapsibleComponent extends React.Component {
           <div id="test8" style={{ height: "500px" }} className="col s12">
             Test
           </div>
-        </div>
+        </div> */}
         {/* <div className="container" style={{ width: "80%" }}>
           <div className="container row">
             <ul className="collapsible popout" data-collapsible="accordion">
@@ -205,6 +205,7 @@ export class CollapsibleComponent extends React.Component {
           </div>
         </div>
        */}
+       </div>
       </React.Fragment>
     );
   }

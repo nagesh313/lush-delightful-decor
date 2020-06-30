@@ -10,7 +10,6 @@ export class SideNavComponent extends React.Component {
         <ul
           id="slide-out"
           className="side-nav"
-          style={{ backgroundColor: "teal" }}
         >
           <li>
             <img alt="" className="circle responsive-img" src="logo.png" />
