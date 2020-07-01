@@ -27,6 +27,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        {/* <HorizontalLinearStepper></HorizontalLinearStepper> */}
+
         <NavComponent></NavComponent>
         {/*  */}
         <ParralaxComponent></ParralaxComponent>

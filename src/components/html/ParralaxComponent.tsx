@@ -1,11 +1,10 @@
-import React from "react";
 import "materialize-css";
+import React from "react";
 import { CardsComponent } from "./CardsComponent";
-import { TestimonialsCardComponent } from "./TestimonialsCardComponent";
-import { CollapsibleComponent } from "./Collapsible";
-import { SliderComponent } from "./Slider";
 import { CarouselComponent } from "./CarouselComponent";
-import { TabsComponent } from "./Tabs";
+import ScrollableTabsButtonForce from "./ForcedTabsComponent";
+import { SliderComponent } from "./Slider";
+import { TestimonialsCardComponent } from "./TestimonialsCardComponent";
 declare const $: any;
 export class ParralaxComponent extends React.Component {
   componentDidMount() {
@@ -15,15 +14,17 @@ export class ParralaxComponent extends React.Component {
     return (
       <React.Fragment>
         <SliderComponent></SliderComponent>
-        <CardsComponent></CardsComponent>
+        <ScrollableTabsButtonForce></ScrollableTabsButtonForce>
+
         <div className="parallax-container">
           <div className="parallax">
             <img alt="" src="actual/7.jpeg" />
           </div>
         </div>
         <div className="section white">
-          <CollapsibleComponent></CollapsibleComponent>
-          <TabsComponent></TabsComponent>
+          <CardsComponent></CardsComponent>
+          {/* <CollapsibleComponent></CollapsibleComponent>
+          <TabsComponent></TabsComponent> */}
         </div>
         <div className="parallax-container">
           <div className="parallax">
