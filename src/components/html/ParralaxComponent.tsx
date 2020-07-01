@@ -14,6 +14,7 @@ export class ParralaxComponent extends React.Component {
     return (
       <React.Fragment>
         <SliderComponent></SliderComponent>
+        <br></br>
         <ScrollableTabsButtonForce></ScrollableTabsButtonForce>
 
         <div className="parallax-container">

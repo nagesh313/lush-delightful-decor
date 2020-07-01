@@ -133,9 +133,7 @@ export default class ScrollableTabsButtonForce extends React.Component<
     super(props);
     this.state = { value: 0, data: tileData };
   }
-  componentDidMount() {
-    // this.classes = useStyles();
-  }
+  componentDidMount() {}
   handleChange = (event: any, newValue: any) => {
     //homeDesiging
     if (newValue === 0) {
@@ -248,40 +246,34 @@ export default class ScrollableTabsButtonForce extends React.Component<
           </Tabs>
         </AppBar>
         <TabPanel value={this.state.value} index={0}>
-          <AdvancedGridList data={this.state.data}></AdvancedGridList>>
-        </TabPanel>
-        <TabPanel value={this.state.value} index={0}>
-          <AdvancedGridList data={this.state.data}></AdvancedGridList>>
-        </TabPanel>
-        <TabPanel value={this.state.value} index={0}>
-          <AdvancedGridList data={this.state.data}></AdvancedGridList>>
+          <AdvancedGridList data={this.state.data}></AdvancedGridList>
         </TabPanel>
         <TabPanel value={this.state.value} index={1}>
-          <AdvancedGridList data={this.state.data}></AdvancedGridList>>
+          <AdvancedGridList data={this.state.data}></AdvancedGridList>
         </TabPanel>
         <TabPanel value={this.state.value} index={2}>
-          <AdvancedGridList data={this.state.data}></AdvancedGridList>>
+          <AdvancedGridList data={this.state.data}></AdvancedGridList>
         </TabPanel>
         <TabPanel value={this.state.value} index={3}>
-          <AdvancedGridList data={this.state.data}></AdvancedGridList>>
+          <AdvancedGridList data={this.state.data}></AdvancedGridList>
         </TabPanel>{" "}
         <TabPanel value={this.state.value} index={4}>
-          <AdvancedGridList data={this.state.data}></AdvancedGridList>>
+          <AdvancedGridList data={this.state.data}></AdvancedGridList>
         </TabPanel>
         <TabPanel value={this.state.value} index={5}>
-          <AdvancedGridList data={this.state.data}></AdvancedGridList>>
+          <AdvancedGridList data={this.state.data}></AdvancedGridList>
         </TabPanel>
         <TabPanel value={this.state.value} index={6}>
-          <AdvancedGridList data={this.state.data}></AdvancedGridList>>
+          <AdvancedGridList data={this.state.data}></AdvancedGridList>
         </TabPanel>
         <TabPanel value={this.state.value} index={7}>
-          <AdvancedGridList data={this.state.data}></AdvancedGridList>>
+          <AdvancedGridList data={this.state.data}></AdvancedGridList>
         </TabPanel>
         <TabPanel value={this.state.value} index={8}>
-          <AdvancedGridList data={this.state.data}></AdvancedGridList>>
+          <AdvancedGridList data={this.state.data}></AdvancedGridList>
         </TabPanel>
         <TabPanel value={this.state.value} index={9}>
-          <AdvancedGridList data={this.state.data}></AdvancedGridList>>
+          <AdvancedGridList data={this.state.data}></AdvancedGridList>
         </TabPanel>
       </div>
     );
