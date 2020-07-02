@@ -173,7 +173,7 @@ export default class HorizontalLinearStepper extends React.Component<
       headers: {
         "Content-Type": "application/json",
         Authorization:
-          "Bearer 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",
+          "Bearer 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",
       },
       body: JSON.stringify(body),
     };
