@@ -1,4 +1,5 @@
 import React from "react";
+import HorizontalLinearStepper from "./StepperComponent";
 export class FooterComponent extends React.Component {
   render() {
     return (
@@ -12,6 +13,7 @@ export class FooterComponent extends React.Component {
                   You can use rows and columns here to organize your footer
                   content.
                 </p>
+                <HorizontalLinearStepper></HorizontalLinearStepper>
               </div>
               <div className="col l4 offset-l2 s12">
                 <h5 className="white-text">Follow us on</h5>

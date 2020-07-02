@@ -42,6 +42,27 @@
 .test {
   margin: auto !important;
 }
-.test  > li {
+.test > li {
   height: unset;
+}
+.stepper-class {
+  background-color: #009688 !important;
+}
+.MuiInput-underline:before {
+  border-bottom: unset !important ;
+}
+.MuiInput-underline:after {
+  border-bottom: unset !important ;
+}
+input {
+  height: 2rem;
+}
+label + .MuiInput-formControl {
+  margin-top: 0;
+}
+.MuiStepper-root {
+  background-color: #009688 !important;
+}
+.test123 {
+  background-color: #009688 !important;
 }
