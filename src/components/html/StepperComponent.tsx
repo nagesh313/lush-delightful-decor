@@ -149,17 +149,14 @@ export default class HorizontalLinearStepper extends React.Component<
         {
           to: [
             {
-              email: "preetiu.24@gmail.com",
-            },
-            {
-              email: "nagesh3.13@gmail.com",
+              email: "lushdelightful.decor@gmail.com",
             },
           ],
           subject: "New Customer Contact",
         },
       ],
       from: {
-        email: "nagesh3.13@gmail.com",
+        email: "lushdelightful.decor@gmail.com",
       },
       content: [
         {
