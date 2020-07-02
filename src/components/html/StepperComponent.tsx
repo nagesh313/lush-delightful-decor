@@ -126,15 +126,12 @@ export default class HorizontalLinearStepper extends React.Component<
     } else {
       count++;
       if (count < 5) {
-        this.send();
       }
     }
     localStorage.clickcount = count;
+    this.send();
   };
   send = () => {
-    debugger;
-    const proxyUrl = "https://cors-anywhere.herokuapp.com/";
-    const url = "https://api.sendgrid.com/v3/mail/send";
     const value =
       "Name: " +
       this.name +
@@ -144,37 +141,10 @@ export default class HorizontalLinearStepper extends React.Component<
       this.email +
       " WhatsApp : " +
       this.whatsapp;
-    const body = {
-      personalizations: [
-        {
-          to: [
-            {
-              email: "lushdelightful.decor@gmail.com",
-            },
-          ],
-          subject: "New Customer Contact",
-        },
-      ],
-      from: {
-        email: "lushdelightful.decor@gmail.com",
-      },
-      content: [
-        {
-          type: "text/plain",
-          value,
-        },
-      ],
-    };
-    const requestOptions = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization:
-          "Bearer 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",
-      },
-      body: JSON.stringify(body),
-    };
-    fetch(proxyUrl + url, requestOptions)
+    const url =
+      "https://app-feedback-service.herokuapp.com/api/SMTPController/send/" +
+      value;
+    fetch(url)
       .then((blob) => {
         console.log(blob);
       })
