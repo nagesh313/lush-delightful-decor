@@ -24,7 +24,7 @@ export class FooterComponent extends React.Component {
                       className="grey-text text-lighten-3 valign-wrapper"
                     >
                       <i className="material-icons">local_phone</i>
-                      +91-85958411
+                      +91-8595841134
                     </a>
                   </li>
                   <li>
