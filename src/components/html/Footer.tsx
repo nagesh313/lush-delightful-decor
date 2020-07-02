@@ -20,7 +20,7 @@ export class FooterComponent extends React.Component {
                 <ul>
                   <li>
                     <a
-                      href="tel:555-555-5555"
+                      href="tel:+91-85958411"
                       className="grey-text text-lighten-3 valign-wrapper"
                     >
                       <i className="material-icons">local_phone</i>
@@ -30,7 +30,7 @@ export class FooterComponent extends React.Component {
                   <li>
                     <a
                       className="grey-text text-lighten-3 valign-wrapper"
-                      href="mailto:webmaster@example.com"
+                      href="mailto:lushdelightful.decor@gmail.com"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
