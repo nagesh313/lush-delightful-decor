@@ -5,18 +5,7 @@ interface IState {
   imageName: any;
 }
 export class NavComponent extends React.Component<{}, IState> {
-  state = { imageName: "logo text/Final logo.png" };
-  count = 0;
-  componentDidMount() {
-    // this.getImage();
-  }
-  getImage() {
-    // setInterval(() => {
-    //   let imageName = (this.count++ % 8) + ".png";
-    //   console.log(imageName);
-    //   this.setState({ imageName: "logo text/" + imageName });
-    // }, 2000);
-  }
+  state = { imageName: "logo-text.png" };
   render() {
     return (
       <React.Fragment>
@@ -28,7 +17,7 @@ export class NavComponent extends React.Component<{}, IState> {
                 <img
                   alt=""
                   className="responsive-img"
-                  style={{ verticalAlign: "middle" }}
+                  style={{ verticalAlign: "middle", width: "280px" }}
                   src={this.state.imageName}
                 />
               </a>

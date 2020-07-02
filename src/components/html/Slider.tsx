@@ -29,7 +29,7 @@ export class SliderComponent extends React.Component {
               </div>
             </li>
             <li>
-              <img alt="" className="responsive-img" src="preeti/2.jpeg" />
+              <img alt="" className="responsive-img" src="preeti/kitchen.jpg" />
               <div className="caption right-align">
                 <h3>We are Creative!</h3>
                 <h5 className="light grey-text text-lighten-3">
@@ -38,7 +38,7 @@ export class SliderComponent extends React.Component {
               </div>
             </li>
             <li>
-              <img alt="" className="responsive-img" src="preeti/3.jpeg" />
+              <img alt="" className="" src="preeti/11.jpeg" />
               <div className="caption center-align">
                 <h3>We bring our diverse background to the table!</h3>
                 <h5 className="light grey-text text-lighten-3">

@@ -28,14 +28,10 @@ class App extends React.Component {
     return (
       <div className="App">
         {/* <HorizontalLinearStepper></HorizontalLinearStepper> */}
-
         <NavComponent></NavComponent>
-        {/*  */}
         <ParralaxComponent></ParralaxComponent>
-
         <FooterComponent></FooterComponent>
         <Fabcomponent></Fabcomponent>
-        {/* <ToastComponent></ToastComponent> */}
       </div>
     );
   }

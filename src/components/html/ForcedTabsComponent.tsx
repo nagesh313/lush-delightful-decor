@@ -105,6 +105,20 @@ const livingData = [
     featured: true,
   },
 ];
+const bathData = [
+  {
+    img: "tabs/bathroom/1.jpg",
+    featured: true,
+  },
+  {
+    img: "tabs/bathroom/2.jpg",
+    featured: false,
+  },
+  {
+    img: "tabs/bathroom/3.jpg",
+    featured: false,
+  },
+];
 const accessoryData = [
   {
     img: "tabs/accessories/1.jpg",
@@ -121,6 +135,80 @@ const accessoryData = [
   {
     img: "tabs/accessories/3.jpg",
     featured: true,
+  },
+];
+const bedData = [
+  {
+    img: "tabs/bedroom/1.jpg",
+    featured: false,
+  },
+  {
+    img: "tabs/bedroom/2.jpg",
+    featured: false,
+  },
+  {
+    img: "tabs/bedroom/3.jpg",
+    featured: false,
+  },
+  {
+    img: "tabs/bedroom/4.jpg",
+    featured: false,
+  },
+];
+const kitchedData = [
+  {
+    img: "tabs/kitchen/1.jpg",
+    featured: false,
+  },
+  {
+    img: "tabs/kitchen/3.jpg",
+    featured: false,
+  },
+  {
+    img: "tabs/kitchen/2.jpg",
+    featured: true,
+  },
+];
+const terraceData = [
+  {
+    img: "tabs/terrace/1.jpg",
+    featured: false,
+  },
+  {
+    img: "tabs/terrace/2.jpg",
+    featured: false,
+  },
+];
+const wallData = [
+  {
+    img: "tabs/wall/1.jpg",
+    featured: true,
+  },
+];
+const furnitureData = [
+  {
+    img: "tabs/furniture/1.jpg",
+    featured: false,
+  },
+  {
+    img: "tabs/furniture/2.jpg",
+    featured: false,
+  },
+  {
+    img: "tabs/furniture/3.jpg",
+    featured: false,
+  },
+  {
+    img: "tabs/furniture/4.jpg",
+    featured: false,
+  },
+  {
+    img: "tabs/furniture/5.jpeg",
+    featured: false,
+  },
+  {
+    img: "tabs/furniture/6.jpg",
+    featured: false,
   },
 ];
 export default class ScrollableTabsButtonForce extends React.Component<
@@ -151,15 +239,31 @@ export default class ScrollableTabsButtonForce extends React.Component<
     }
     //bed
     if (newValue === 2) {
+      this.setState({
+        value: newValue,
+        data: bedData,
+      });
     }
     //bath
     if (newValue === 3) {
+      this.setState({
+        value: newValue,
+        data: bathData,
+      });
     }
     //kitched
     if (newValue === 4) {
+      this.setState({
+        value: newValue,
+        data: kitchedData,
+      });
     }
     //terrace
     if (newValue === 5) {
+      this.setState({
+        value: newValue,
+        data: terraceData,
+      });
     }
     //kids
     if (newValue === 6) {
@@ -169,9 +273,17 @@ export default class ScrollableTabsButtonForce extends React.Component<
       });
     } //furniture
     if (newValue === 7) {
+      this.setState({
+        value: newValue,
+        data: furnitureData,
+      });
     } //wall
     if (newValue === 8) {
-    } //wall
+      this.setState({
+        value: newValue,
+        data: wallData,
+      });
+    } //accessory
     if (newValue === 9) {
       this.setState({
         value: newValue,
@@ -246,18 +358,44 @@ export default class ScrollableTabsButtonForce extends React.Component<
           </Tabs>
         </AppBar>
         <TabPanel value={this.state.value} index={0}>
+          <div style={{ textAlign: "center" }}>
+            Everyone wants their house to be decorated with creative ideas and
+            get a great relaxing and smoothening environment, you give us an
+            empty space and we will give back to you a creative space filled
+            with great and astonishing ideas.
+          </div>
           <AdvancedGridList data={this.state.data}></AdvancedGridList>
         </TabPanel>
         <TabPanel value={this.state.value} index={1}>
+          <div style={{ textAlign: "center" }}>
+            Everyone wants their living room to be relaxing spacious and stress
+            free. We provide our clients with designs which fulfills their
+            requirement.
+          </div>
           <AdvancedGridList data={this.state.data}></AdvancedGridList>
         </TabPanel>
         <TabPanel value={this.state.value} index={2}>
+          <div style={{ textAlign: "center" }}>
+            We honestly feel that bedroom designing should be done with utmost
+            care and it should be in such a way that gives you space where you
+            can forget your stress and relax.
+          </div>{" "}
           <AdvancedGridList data={this.state.data}></AdvancedGridList>
         </TabPanel>
         <TabPanel value={this.state.value} index={3}>
           <AdvancedGridList data={this.state.data}></AdvancedGridList>
-        </TabPanel>{" "}
+        </TabPanel>
         <TabPanel value={this.state.value} index={4}>
+          <div style={{ textAlign: "center" }}>
+            <div>U- Shaped Kitchen </div>
+            <div>L- Shaped Kitchen </div>
+            <div> Galley Kitchen Island</div>
+            <div> Kitchen Peninsula</div> <div> Parallel Kitchen</div>
+            The kitchen is one of the most important part of a home. It is one
+            of the area in Interior Designing which has picked up rapidly in few
+            years. Many a people are very much interested to give their kitchen
+            a complete new and gradient look.
+          </div>{" "}
           <AdvancedGridList data={this.state.data}></AdvancedGridList>
         </TabPanel>
         <TabPanel value={this.state.value} index={5}>

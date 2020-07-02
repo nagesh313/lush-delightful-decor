@@ -18,7 +18,7 @@ export class CarouselComponent extends React.Component {
             <img alt="" src="images/7.jpg" />
           </a>
           <a className="carousel-item" href="#four!">
-            <img alt="" src="images/8.jpg" />
+            <img alt="" src="images/11.jpeg" />
           </a>
           <a className="carousel-item" href="#five!">
             <img alt="" src="images/9.jpg" />
