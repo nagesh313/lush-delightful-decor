@@ -1,12 +1,12 @@
 import "materialize-css/dist/css/materialize.min.css";
 import React from "react";
 import "./App.css";
-import { Fabcomponent } from "./components/html/FabComponent";
 import { FooterComponent } from "./components/html/Footer";
 import { NavComponent } from "./components/html/Nav";
 import { ParralaxComponent } from "./components/html/ParralaxComponent";
 
 declare const Materialize: any;
+declare const $: any;
 class App extends React.Component {
   componentDidMount() {
     var options = [
@@ -22,6 +22,7 @@ class App extends React.Component {
       },
     ];
     Materialize.scrollFire(options);
+    $(".scrollspy").scrollSpy();
   }
 
   render() {
@@ -31,7 +32,7 @@ class App extends React.Component {
         <NavComponent></NavComponent>
         <ParralaxComponent></ParralaxComponent>
         <FooterComponent></FooterComponent>
-        <Fabcomponent></Fabcomponent>
+        {/* <Fabcomponent></Fabcomponent> */}
       </div>
     );
   }

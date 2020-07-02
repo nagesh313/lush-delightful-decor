@@ -2,7 +2,7 @@ import React from "react";
 export class CardsComponent extends React.Component {
   render() {
     return (
-      <div>
+      <div id="about-us" className="scrollspy">
         <br></br>
         <h3 className="center" style={{ fontFamily: "cursive" }}>
           Celebrate the love of decor and design with our offereings

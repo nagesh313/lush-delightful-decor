@@ -294,7 +294,7 @@ export default class ScrollableTabsButtonForce extends React.Component<
   };
   render() {
     return (
-      <div>
+      <div id="our-offerrings" className="scrollspy">
         <AppBar position="static" color="default">
           <Tabs
             value={this.state.value}

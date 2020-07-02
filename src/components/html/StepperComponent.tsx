@@ -5,29 +5,8 @@ import StepLabel from "@material-ui/core/StepLabel";
 import Stepper from "@material-ui/core/Stepper";
 import Typography from "@material-ui/core/Typography";
 import React from "react";
-
-// const useStyles = makeStyles((theme) => ({
-//   form: {
-//     "& .MuiTextField-root": {
-//       margin: theme.spacing(1),
-//       width: 200,
-//     },
-//   },
-//   root: {
-//     width: "100%",
-//   },
-//   button: {
-//     marginTop: theme.spacing(1),
-//     marginRight: theme.spacing(1),
-//   },
-//   actionsContainer: {
-//     marginBottom: theme.spacing(2),
-//   },
-//   resetContainer: {
-//     padding: theme.spacing(3),
-//   },
-// }));
-
+declare var localStorage: any;
+declare var document: any;
 function getSteps() {
   return [
     "Help us with your Name",
@@ -70,7 +49,7 @@ function getStepContent(step: any) {
           autoComplete="on"
         >
           <FormControl>
-            <TextField id="Phone" type="number" label="Phone Number" />
+            <TextField id="phone" type="number" label="Phone Number" />
           </FormControl>
         </form>
       );
@@ -84,7 +63,7 @@ function getStepContent(step: any) {
           autoComplete="on"
         >
           <FormControl>
-            <TextField id="Email" type="email" label="Email Id" />
+            <TextField id="email" type="email" label="Email Id" />
           </FormControl>
         </form>
       );
@@ -98,7 +77,7 @@ function getStepContent(step: any) {
           autoComplete="on"
         >
           <FormControl>
-            <TextField id="WhatsApp" type="number" label="WhatsApp Number" />
+            <TextField id="whatsapp" type="number" label="WhatsApp Number" />
           </FormControl>
         </form>
       );
@@ -111,7 +90,10 @@ export default class HorizontalLinearStepper extends React.Component<
   {},
   { activeStep?: any; prevActiveStep?: any }
 > {
-  // const classes = useStyles();
+  name: any;
+  phone: any;
+  email: any;
+  whatsapp: any;
   steps = getSteps();
   constructor() {
     super({});
@@ -119,40 +101,91 @@ export default class HorizontalLinearStepper extends React.Component<
       activeStep: 0,
     };
   }
-  componentDidMount() {}
-  // isStepOptional = (step: any) => {
-  //   return false;
-  // };
-
-  // isStepSkipped = (step: any) => {
-  //   return skipped.has(step);
-  // };
-
-  // handleNext = () => {
-  //   let newSkipped = skipped;
-  //   if (isStepSkipped(activeStep)) {
-  //     newSkipped = new Set(newSkipped.values());
-  //     newSkipped.delete(activeStep);
-  //   }
-  //   setActiveStep((prevActiveStep) => prevActiveStep + 1);
-  //   setSkipped(newSkipped);
-  // };
-
-  // handleBack = () => {
-  //   setActiveStep((prevActiveStep) => prevActiveStep - 1);
-  // };
-
-  // handleSkip = () => {
-  //   if (!isStepOptional(activeStep)) {
-  //     // You probably want to guard against something like this,
-  //     // it should never occur unless someone's actively trying to break something.
-  //     throw new Error("You can't skip a step that isn't optional.");
-  //   }
-  // }
-  handleNext = () => {
+  handleNext = (event: any) => {
+    if (this.state.activeStep === 0) {
+      this.name = document.getElementById("name").value;
+    }
+    if (this.state.activeStep === 1) {
+      this.phone = document.getElementById("phone").value;
+    }
+    if (this.state.activeStep === 2) {
+      this.email = document.getElementById("email").value;
+    }
+    if (this.state.activeStep === 3) {
+      this.whatsapp = document.getElementById("whatsapp").value;
+    }
+    if (event.target.textContent === "Finish") {
+      this.sendEmail();
+    }
     this.setState({ activeStep: this.state.activeStep + 1 });
   };
-
+  sendEmail = () => {
+    let count = localStorage.clickcount;
+    if (count === undefined || count === 0) {
+      count = 1;
+    } else {
+      count++;
+      if (count < 5) {
+        this.send();
+      }
+    }
+    localStorage.clickcount = count;
+  };
+  send = () => {
+    debugger;
+    const proxyUrl = "https://cors-anywhere.herokuapp.com/";
+    const url = "https://api.sendgrid.com/v3/mail/send";
+    const value =
+      "Name: " +
+      this.name +
+      " Phone : " +
+      this.phone +
+      " Email:  " +
+      this.email +
+      " WhatsApp : " +
+      this.whatsapp;
+    const body = {
+      personalizations: [
+        {
+          to: [
+            {
+              email: "preetiu.24@gmail.com",
+            },
+            {
+              email: "nagesh3.13@gmail.com",
+            },
+          ],
+          subject: "New Customer Contact",
+        },
+      ],
+      from: {
+        email: "nagesh3.13@gmail.com",
+      },
+      content: [
+        {
+          type: "text/plain",
+          value,
+        },
+      ],
+    };
+    const requestOptions = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization:
+          "Bearer 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",
+      },
+      body: JSON.stringify(body),
+    };
+    fetch(proxyUrl + url, requestOptions)
+      .then((blob) => {
+        console.log(blob);
+      })
+      .catch((e) => {
+        console.log(e);
+        return e;
+      });
+  };
   handleReset = () => {
     this.setState({ activeStep: 0 });
   };

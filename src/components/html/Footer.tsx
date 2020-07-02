@@ -3,15 +3,15 @@ import HorizontalLinearStepper from "./StepperComponent";
 export class FooterComponent extends React.Component {
   render() {
     return (
-      <div>
+      <div id="reach-us-out" className="scrollspy">
         <footer className="page-footer teal">
           <div className="container">
             <div className="row">
               <div className="col l6 s12">
-                <h5 className="white-text">About us</h5>
+                <h5 className="white-text">Reach us out ! </h5>
                 <p className="grey-text text-lighten-4">
-                  You can use rows and columns here to organize your footer
-                  content.
+                  Please feel free to reach us out by using our contact details
+                  or fill this form and let our team reach you out.
                 </p>
                 <HorizontalLinearStepper></HorizontalLinearStepper>
               </div>

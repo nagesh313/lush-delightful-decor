@@ -7,7 +7,7 @@ export class SliderComponent extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div className="slider">
+        <div className="slider scrollspy" id="home-slider">
           <ul className="slides">
             <li>
               <img className="responsive-img" alt="" src="preeti/4.jpeg" />

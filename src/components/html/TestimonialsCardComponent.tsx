@@ -5,7 +5,7 @@ export class TestimonialsCardComponent extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div id="testimonials-component" className="scrollspy">
         <div className="container">
           <div className="row" id="cards-row">
             <br></br>
