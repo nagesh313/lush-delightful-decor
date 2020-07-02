@@ -191,10 +191,6 @@ const furnitureData = [
     featured: false,
   },
   {
-    img: "tabs/furniture/2.jpg",
-    featured: false,
-  },
-  {
     img: "tabs/furniture/3.jpg",
     featured: false,
   },
