@@ -1,7 +1,7 @@
 import React from "react";
 export class TestimonialsCardComponent extends React.Component {
   removePulse(ele: any) {
-    ele.currentTarget.classList.remove("pulse");
+    ele.currentTarget.classList.remove("pulse1");
   }
   render() {
     return (
@@ -18,7 +18,7 @@ export class TestimonialsCardComponent extends React.Component {
                   <div className="card hoverable">
                     <div className="card-content center">
                       <button
-                        className="btn-floating btn-large waves-effect waves-light pulse activator"
+                        className="btn-floating btn-large waves-effect waves-light pulse"
                         onClick={(el) => {
                           this.removePulse(el);
                         }}
@@ -28,9 +28,11 @@ export class TestimonialsCardComponent extends React.Component {
                     </div>
                     <div className="card-content">
                       <p>
-                        I am a very simple card. I am good at containing small
-                        bits of information. I am convenient because I require
-                        little markup to use effectively.
+                        With Lush delightful, it was value for money products
+                        and designs, from private individuals looking to remodel
+                        their homes. She is well aware of the latest products
+                        and design trends in the market, loved the concept -{" "}
+                        <b>Komal</b>
                       </p>
                     </div>
                     <div className="card-reveal">
@@ -38,8 +40,9 @@ export class TestimonialsCardComponent extends React.Component {
                         <i className="material-icons right">close</i>Card Title
                       </span>
                       <p>
-                        Here is some more information about this product that is
-                        only revealed once clicked on.
+                        I am happy to have collaborated with her to design my
+                        dream home and am very pleased with the result. Wishing
+                        her all the best for future endeavors.
                       </p>
                     </div>
                   </div>
@@ -50,7 +53,7 @@ export class TestimonialsCardComponent extends React.Component {
                   <div className="card hoverable">
                     <div className="card-content center">
                       <button
-                        className="btn-floating btn-large waves-effect waves-light pulse activator"
+                        className="btn-floating btn-large waves-effect waves-light pulse"
                         onClick={(el) => {
                           this.removePulse(el);
                         }}
@@ -60,9 +63,9 @@ export class TestimonialsCardComponent extends React.Component {
                     </div>
                     <div className="card-content">
                       <p>
-                        I am a very simple card. I am good at containing small
-                        bits of information. I am convenient because I require
-                        little markup to use effectively.
+                        I am happy to have collaborated with her to design my
+                        dream home and am very pleased with the result. Wishing
+                        her all the best for future endeavors - <b>Pooja</b>
                       </p>
                     </div>
                     <div className="card-reveal">
@@ -92,9 +95,11 @@ export class TestimonialsCardComponent extends React.Component {
                     </div>
                     <div className="card-content">
                       <p>
-                        I am a very simple card. I am good at containing small
-                        bits of information. I am convenient because I require
-                        little markup to use effectively.
+                        Thank you for making the whole process so enjoyable. I
+                        absolutely love my kitchen. Both Style at Home and
+                        Living interiors is lifted, everyone thinks it is
+                        amazing. You have been a pleasure to work with and
+                        wishing you all the success - <b>Kavya</b>
                       </p>
                     </div>
                     <div className="card-reveal">
@@ -124,9 +129,12 @@ export class TestimonialsCardComponent extends React.Component {
                     </div>
                     <div className="card-content">
                       <p>
-                        I am a very simple card. I am good at containing small
-                        bits of information. I am convenient because I require
-                        little markup to use effectively.
+                        The exceptional service that I received from Lush
+                        Delightful Decor is beyond compare. She has a wonderful
+                        eye for detail and color. She was able to take my ideas
+                        and transform them into realities. I couldn’t have had a
+                        better and more rewarding relationship. I recommend Lush
+                        Delightful Decor - <b>Ashish</b>
                       </p>
                     </div>
                     <div className="card-reveal">
