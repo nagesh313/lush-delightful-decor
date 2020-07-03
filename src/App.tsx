@@ -1,12 +1,21 @@
+import { createBrowserHistory } from "history";
 import "materialize-css/dist/css/materialize.min.css";
 import React from "react";
+import ReactGA from "react-ga";
 import "./App.css";
 import { FooterComponent } from "./components/html/Footer";
 import { NavComponent } from "./components/html/Nav";
 import { ParralaxComponent } from "./components/html/ParralaxComponent";
-
+const trackingId = "UA-171596388-1"; // Replace with your Google Analytics tracking ID
+ReactGA.initialize(trackingId);
+ReactGA.set({});
 declare const Materialize: any;
 declare const $: any;
+const history = createBrowserHistory();
+history.listen((location: any) => {
+  ReactGA.set({ page: location.pathname }); // Update the user's current page
+  ReactGA.pageview(location.pathname); // Record a pageview for the given page
+});
 class App extends React.Component {
   componentDidMount() {
     var options = [
