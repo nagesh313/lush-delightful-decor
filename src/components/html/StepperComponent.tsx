@@ -159,7 +159,9 @@ export default class HorizontalLinearStepper extends React.Component<
   handleBack = () => {};
   render() {
     return (
-      <div className={"teal"} /* className={classes.root} */>
+      <div
+        style={{ backgroundColor: "#10316b" }} /* className={classes.root} */
+      >
         <Stepper activeStep={this.state.activeStep} orientation="vertical">
           {this.steps.map((label: any, index: any) => (
             <Step key={label}>

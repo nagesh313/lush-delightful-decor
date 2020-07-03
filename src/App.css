@@ -61,10 +61,10 @@ label + .MuiInput-formControl {
   margin-top: 0;
 }
 .MuiStepper-root {
-  background-color: #009688 !important;
+  background-color: #10316b !important;
 }
 .test123 {
-  background-color: #009688 !important;
+  background-color: #10316b !important;
 }
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -76,4 +76,7 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type="number"] {
   -moz-appearance: textfield;
+}
+.teal {
+  background-color: #10316b !important;
 }
