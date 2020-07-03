@@ -25,7 +25,7 @@ export class SideNavComponent extends React.Component {
           </li>
           <li>
             <a href="#our-offerrings" className="waves-effect">
-              <i className="material-icons">home</i>Our Offerings
+              <i className="material-icons">local_offer</i>Our Offerings
             </a>
           </li>
           <li>

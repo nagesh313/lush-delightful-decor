@@ -32,7 +32,7 @@ export class TestimonialsCardComponent extends React.Component {
                         and designs, from private individuals looking to remodel
                         their homes. She is well aware of the latest products
                         and design trends in the market, loved the concept -{" "}
-                        <b>Komal</b>
+                        <b>Pranav</b>
                       </p>
                     </div>
                     <div className="card-reveal">
@@ -65,7 +65,7 @@ export class TestimonialsCardComponent extends React.Component {
                       <p>
                         I am happy to have collaborated with her to design my
                         dream home and am very pleased with the result. Wishing
-                        her all the best for future endeavors - <b>Pooja</b>
+                        her all the best for future endeavors - <b>Smriti</b>
                       </p>
                     </div>
                     <div className="card-reveal">
@@ -99,7 +99,7 @@ export class TestimonialsCardComponent extends React.Component {
                         absolutely love my kitchen. Both Style at Home and
                         Living interiors is lifted, everyone thinks it is
                         amazing. You have been a pleasure to work with and
-                        wishing you all the success - <b>Kavya</b>
+                        wishing you all the success - <b>Vinita</b>
                       </p>
                     </div>
                     <div className="card-reveal">
@@ -134,7 +134,7 @@ export class TestimonialsCardComponent extends React.Component {
                         eye for detail and color. She was able to take my ideas
                         and transform them into realities. I couldn’t have had a
                         better and more rewarding relationship. I recommend Lush
-                        Delightful Decor - <b>Ashish</b>
+                        Delightful Decor - <b>Rishi</b>
                       </p>
                     </div>
                     <div className="card-reveal">

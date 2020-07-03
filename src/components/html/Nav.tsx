@@ -5,7 +5,7 @@ interface IState {
   imageName: any;
 }
 export class NavComponent extends React.Component<{}, IState> {
-  state = { imageName: "logo-text.png" };
+  state = { imageName: "white.png" };
   render() {
     return (
       <React.Fragment>

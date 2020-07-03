@@ -6,7 +6,7 @@
 }
 
 .card > i {
-  background-color: rgba(121; 85; 72; 0.65);
+  background-color: rgba(121, 85, 72, 0.65);
 }
 .tabs {
   height: auto;
@@ -79,4 +79,13 @@ input[type="number"] {
 }
 .teal {
   background-color: #10316b !important;
+}
+.MuiStepLabel-labelContainer,
+.MuiTypography-displayBlock,
+.side-nav a,
+i {
+  color: white !important;
+}
+label {
+  color: white !important;
 }
