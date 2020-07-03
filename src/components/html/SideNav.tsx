@@ -9,7 +9,11 @@ export class SideNavComponent extends React.Component {
       <React.Fragment>
         <ul id="slide-out" className="side-nav teal sidenav-close">
           <li>
-            <img alt="" className="circle responsive-img" src="logo.png" />
+            <img
+              alt=""
+              className="circle responsive-img"
+              src="final copy.png"
+            />
           </li>
           {/* <li>
             <div className="divider"></div>
