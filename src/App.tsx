@@ -7,8 +7,8 @@ import { FooterComponent } from "./components/html/Footer";
 import { NavComponent } from "./components/html/Nav";
 import { ParralaxComponent } from "./components/html/ParralaxComponent";
 const trackingId = "UA-171596388-1"; // Replace with your Google Analytics tracking ID
-ReactGA.initialize(trackingId);
-ReactGA.set({});
+ReactGA.initialize(trackingId, { gaOptions: { siteSpeedSampleRate: 100 } });
+ReactGA.pageview(window.location.pathname + window.location.search);
 declare const Materialize: any;
 declare const $: any;
 const history = createBrowserHistory();
