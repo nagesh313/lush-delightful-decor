@@ -18,6 +18,7 @@ history.listen((location: any) => {
 });
 class App extends React.Component {
   componentDidMount() {
+    document.title = "Lush Interior Decor";
     var options = [
       {
         selector: ".card-list",
