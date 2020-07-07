@@ -46,7 +46,7 @@ export class FooterComponent extends React.Component {
                   <li>
                     <a
                       className="grey-text text-lighten-3 valign-wrapper"
-                      href="http://www.facebook.com"
+                      href="https://m.facebook.com/pg/Lush-Delightful-Decor-110190740755876/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -62,7 +62,7 @@ export class FooterComponent extends React.Component {
                   <li>
                     <a
                       className="grey-text text-lighten-3 valign-wrapper"
-                      href="http://www.instagram.com"
+                      href="https://www.instagram.com/designing_dreamsfor/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
