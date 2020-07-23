@@ -142,7 +142,7 @@ export default class HorizontalLinearStepper extends React.Component<
       " WhatsApp : " +
       this.whatsapp;
     const url =
-      "https://app-feedback-service.herokuapp.com/api/SMTPController/send/" +
+      "https://service-send-mail.herokuapp.com/api/SMTPController/send" +
       value;
     fetch(url)
       .then((blob) => {
